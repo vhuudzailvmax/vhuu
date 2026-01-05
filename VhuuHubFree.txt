@@ -1,0 +1,38 @@
+local Fluent = loadstring(game:HttpGet(
+"https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"
+))()
+local Window = Fluent:CreateWindow({
+Title = "Vhuu Hub | Blox Fruits",
+SubTitle = "By Vhuu",
+TabWidth = 160,
+Size = UDim2.fromOffset(500, 420),
+Acrylic = false,
+Theme = "Dark",
+MinimizeKey = nil
+})
+local MainTab = Window:AddTab({
+Title = "Main",
+Icon = "home"
+})
+MainTab:AddParagraph({
+Title = "Information",
+Content = "Script made by: Vhuu"
+})
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Parent = game:GetService("CoreGui")
+local ToggleBtn = Instance.new("ImageButton")
+ToggleBtn.Parent = ScreenGui
+ToggleBtn.Size = UDim2.fromOffset(50, 50)
+ToggleBtn.Position = UDim2.new(0.05, 0, 0.3, 0)
+ToggleBtn.Image = "rbxassetid://130297704555355"
+ToggleBtn.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+ToggleBtn.Active = true
+ToggleBtn.Draggable = true
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = ToggleBtn
+ToggleBtn.MouseButton1Click:Connect(function()
+if Window.Root then
+Window.Root.Visible = not Window.Root.Visible
+end
+end)
