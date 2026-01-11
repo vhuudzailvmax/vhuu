@@ -252,7 +252,7 @@ Top_1.Position = UDim2.new(0.5, 0, 0.05000000074505806, 0)
 Top_1.Size = UDim2.new(0, 0, 0, 18)
 Top_1.Selectable = false
 Top_1.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Top_1.Text = "Lonely Stats Checker"
+Top_1.Text = "Vhuu | Kaitun"
 Top_1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Top_1.TextSize = 16
 Top_1.TextYAlignment = Enum.TextYAlignment.Bottom
@@ -379,7 +379,7 @@ Under_1.BorderSizePixel = 0
 Under_1.Position = UDim2.new(0.5, 0,0, 30)
 Under_1.Size = UDim2.new(0, 450,0, 18)
 Under_1.FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-Under_1.Text = "Status Farm: N/A"
+Under_1.Text = "Status Farm: Auto Farm Level"
 Under_1.TextColor3 = Color3.fromRGB(233,80,80)
 Under_1.TextSize = 16
 
@@ -434,7 +434,7 @@ ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 ImageLabel.BackgroundTransparency = 1.0  
 ImageLabel.Position = UDim2.new(0.5, 0, 0.5, 0)  
 ImageLabel.Size = UDim2.new(0, 40, 0, 40)  
-ImageLabel.Image = "rbxassetid://112485471724320"  
+ImageLabel.Image = "rbxassetid://130297704555355"  
 
 TextButton.Parent = dutdit  
 TextButton.BackgroundTransparency = 1.0  
