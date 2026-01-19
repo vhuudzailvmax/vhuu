@@ -48,7 +48,7 @@ NotificacaoNightMystic("RedzRoblox", "Script carregado com sucesso!")
 repeat task.wait() until game:IsLoaded()
 
 local HttpService = game:GetService("HttpService")
-local FolderName = "RedzRoblox"
+local FolderName = "Vhuu Hub"
 local FileName = "Settings.json"
 local FullPath = FolderName .. "/" .. FileName
 
@@ -2525,7 +2525,7 @@ ConfigSection:AddButton({
             
             -- Notificação Universal (Funciona sem a lib Fluent)
             game.StarterGui:SetCore("SendNotification", {
-                Title = "RedzRoblox",
+                Title = "Vhuu Hub",
                 Text = "Configurações salvas com sucesso!",
                 Duration = 5
             })
@@ -2546,13 +2546,13 @@ ConfigSection:AddButton({
             
             -- Notificação Universal
             game.StarterGui:SetCore("SendNotification", {
-                Title = "RedzRoblox",
+                Title = "Vhuu Hub",
                 Text = "Configurações resetadas! Re-execute o script.",
                 Duration = 5
             })
         else
             game.StarterGui:SetCore("SendNotification", {
-                Title = "RedzRoblox",
+                Title = "Vhuu Hub",
                 Text = "Nenhum arquivo de save encontrado para apagar.",
                 Duration = 3
             })
