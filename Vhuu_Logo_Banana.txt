@@ -72,45 +72,6 @@ Window = Library:CreateWindow({
 })
 
 -- ==========================================
--- REMOVE ALL PINK COLOR (100%)
--- ==========================================
-task.spawn(function()
-    local black = Color3.fromRGB(15,15,15)
-    local white = Color3.fromRGB(255,255,255)
-
-    while true do
-        task.wait(0.3)
-
-        for _,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
-
-            if v:IsA("Frame") or v:IsA("ScrollingFrame") then
-                if v.BackgroundTransparency < 1 then
-                    v.BackgroundColor3 = black
-                end
-            end
-
-            if v:IsA("TextButton") then
-                v.BackgroundColor3 = black
-                v.TextColor3 = white
-            end
-
-            if v:IsA("TextLabel") then
-                v.TextColor3 = white
-            end
-
-            if v:IsA("ImageLabel") or v:IsA("ImageButton") then
-                v.ImageColor3 = white
-            end
-
-            if v:IsA("UIStroke") then
-                v.Color = white
-            end
-
-        end
-    end
-end)
-
--- ==========================================
 -- TẠO CÁC TABS (ĐÚNG API: AddTab nhận string)
 -- ==========================================
 -- ========================================================
@@ -325,39 +286,57 @@ Tabs = {
 -- ==========================================
 -- FORCE UI BLACK + WHITE
 -- ==========================================
-task.spawn(function()
-    task.wait(0.5)
+pcall(function()
+    if Library.SetTheme then
+        Library:SetTheme({
 
-    local black = Color3.fromRGB(15,15,15)
-    local white = Color3.fromRGB(255,255,255)
+            -- nền giống UI Blox Fruits
+            Background = Color3.fromRGB(240,240,240),
 
-    for _,v in pairs(game.Players.LocalPlayer.PlayerGui:GetDescendants()) do
-        
-        if v:IsA("Frame") or v:IsA("ScrollingFrame") then
-            if v.BackgroundTransparency < 1 then
-                v.BackgroundColor3 = black
-            end
-        end
+            -- màu đỏ chính
+            Accent = Color3.fromRGB(255,0,0),
 
-        if v:IsA("TextButton") then
-            v.BackgroundColor3 = black
-            v.TextColor3 = white
-        end
+            -- chữ
+            PrimaryText = Color3.fromRGB(0,0,0),
+            SecondaryText = Color3.fromRGB(80,80,80),
 
-        if v:IsA("TextLabel") then
-            v.TextColor3 = white
-        end
+            -- header
+            Header = Color3.fromRGB(255,0,0),
 
-        if v:IsA("ImageLabel") or v:IsA("ImageButton") then
-            v.ImageColor3 = white
-        end
+            -- khung
+            Box = Color3.fromRGB(255,255,255),
 
-        if v:IsA("UIStroke") then
-            v.Color = white
-        end
+            -- button
+            Button = Color3.fromRGB(255,0,0),
+            Hover = Color3.fromRGB(220,0,0),
 
+            -- toggle
+            Toggle = Color3.fromRGB(255,0,0),
+            ToggleBackground = Color3.fromRGB(230,230,230),
+
+            -- dropdown
+            Dropdown = Color3.fromRGB(255,255,255),
+            DropdownBackground = Color3.fromRGB(240,240,240),
+
+            -- scrollbar
+            Scrollbar = Color3.fromRGB(255,0,0),
+
+            -- viền
+            Outline = Color3.fromRGB(255,0,0),
+
+            -- shadow
+            Shadow = Color3.fromRGB(200,200,200)
+        })
     end
 end)
+
+wait(1)
+
+Library:Notify({
+Title = "Vhuu Hub",
+Description = "Welcome! The pink UI has been successfully loaded and the UI script has been uploaded. \nNhấn nút góc trái màn hình để mở GUI.",
+Duration = 4
+})
 
 -- ==========================================
 -- SEA FLAGS (không kiểm tra, bật hết để mọi tính năng hoạt động)
