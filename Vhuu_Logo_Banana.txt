@@ -334,7 +334,7 @@ wait(1)
 
 Library:Notify({
 Title = "Vhuu Hub",
-Description = "Welcome! The pink UI has been successfully loaded and the UI script has been uploaded. \nNhấn nút góc trái màn hình để mở GUI.",
+Description = "Welcome! The pink UI has been successfully loaded and the UI script has been uploaded.\Click on the banana cat hub logo to open the menu.",
 Duration = 4
 })
 
