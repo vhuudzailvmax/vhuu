@@ -3738,13 +3738,13 @@ function CheckItemBPCRBPCR(v463)
 end
 local vu32 = loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/Library-ui/refs/heads/main/redz-V5-remake/main.luau"))()
 local v466 = vu32:MakeWindow({
-    Title = "Nghi Dog 6 : Blox Fruits",👈 thay đổi tên ví dụ Nghi Dog Hub : Blox Fruits
-    SubTitle = "By Vhuu",👈 tên phụ ví dụ By Phúc
+    Title = "Nghi Dog Hub : Blox Fruits",
+    SubTitle = "By Vhuu",
     SaveFolder = "Redz | redz lib v5.lua"
 })
 
 v466:AddMinimizeButton({
-    Button = { Image = "rbxassetid://106431536368043",👈thay logo BackgroundTransparency = 0 },
+    Button = { Image = "rbxassetid://130297704555355",BackgroundTransparency = 0 },
     Size = UDim2.new(0, 35, 0, 35),
     Corner = { CornerRadius = UDim.new(0.25, 0) },
 })
