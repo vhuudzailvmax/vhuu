@@ -359,25 +359,6 @@ task.spawn(function()
     end
 end)
 
-wait(1)
-
-Library:Notify({
-    Title = "Vhuu Hub",
-    Description = "Welcome! The UI script has been successfully loaded and the UI has been changed to black and white.\nNhấn nút góc trái màn hình để mở GUI.",
-    Duration = 4
-})
-
--- ==========================================
--- TOGGLE BUTTON (NÚT MỞ/ĐÓNG MENU)
--- ==========================================
-
--- Anti AFK
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-    game:GetService("VirtualUser"):Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-    wait()
-    game:GetService("VirtualUser"):Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
-end)
-
 -- ==========================================
 -- SEA FLAGS (không kiểm tra, bật hết để mọi tính năng hoạt động)
 -- ==========================================
