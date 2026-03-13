@@ -61,7 +61,7 @@ local plr = Player
 local Root = HumanoidRootPart
 
 -- ==========================================
--- LOAD UI LIBRARY (HDanh Hub)
+-- LOAD UI LIBRARY (Vhuu Hub)
 -- ==========================================
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hdanhhub/UI/refs/heads/main/ui_BananaHub_final.lua"))()
 
@@ -289,48 +289,45 @@ Tabs = {
 pcall(function()
     if Library.SetTheme then
         Library:SetTheme({
-            Background         = Color3.fromRGB(15,15,15),
-            Accent             = Color3.fromRGB(255,0,0),
-            PrimaryText        = Color3.fromRGB(255,255,255),
-            SecondaryText      = Color3.fromRGB(200,200,200),
-            Divider            = Color3.fromRGB(255,0,0),
-            Header             = Color3.fromRGB(120,0,0),
-            Box                = Color3.fromRGB(25,25,25),
-            Button             = Color3.fromRGB(255,0,0),
-            Hover              = Color3.fromRGB(200,0,0),
-            Toggle             = Color3.fromRGB(255,0,0),
-            ToggleBackground   = Color3.fromRGB(30,30,30),
-            Dropdown           = Color3.fromRGB(30,30,30),
-            DropdownBackground = Color3.fromRGB(20,20,20),
-            Scrollbar          = Color3.fromRGB(255,0,0),
-            Outline            = Color3.fromRGB(255,0,0),
-            Shadow             = Color3.fromRGB(0,0,0),
+
+            -- nền giống UI Blox Fruits
+            Background = Color3.fromRGB(240,240,240),
+
+            -- màu đỏ chính
+            Accent = Color3.fromRGB(255,0,0),
+
+            -- chữ
+            PrimaryText = Color3.fromRGB(0,0,0),
+            SecondaryText = Color3.fromRGB(80,80,80),
+
+            -- header
+            Header = Color3.fromRGB(255,0,0),
+
+            -- khung
+            Box = Color3.fromRGB(255,255,255),
+
+            -- button
+            Button = Color3.fromRGB(255,0,0),
+            Hover = Color3.fromRGB(220,0,0),
+
+            -- toggle
+            Toggle = Color3.fromRGB(255,0,0),
+            ToggleBackground = Color3.fromRGB(230,230,230),
+
+            -- dropdown
+            Dropdown = Color3.fromRGB(255,255,255),
+            DropdownBackground = Color3.fromRGB(240,240,240),
+
+            -- scrollbar
+            Scrollbar = Color3.fromRGB(255,0,0),
+
+            -- viền
+            Outline = Color3.fromRGB(255,0,0),
+
+            -- shadow
+            Shadow = Color3.fromRGB(200,200,200)
         })
     end
-
-    task.spawn(function()
-        task.wait(0.5)
-        for _, gui in pairs(PlayerGui:GetChildren()) do
-            if gui:IsA("ScreenGui") then
-                for _, desc in pairs(gui:GetDescendants()) do
-                    if desc:IsA("Frame") or desc:IsA("ScrollingFrame") then
-                        if desc.BackgroundTransparency < 1 then
-                            desc.BackgroundColor3 = Color3.fromRGB(20,20,20)
-                        end
-                    elseif desc:IsA("TextButton") then
-                        desc.BackgroundColor3 = Color3.fromRGB(255,0,0)
-                        desc.TextColor3 = Color3.fromRGB(255,255,255)
-                    elseif desc:IsA("TextLabel") then
-                        desc.TextColor3 = Color3.fromRGB(255,255,255)
-                    elseif desc:IsA("ImageLabel") or desc:IsA("ImageButton") then
-                        desc.ImageColor3 = Color3.fromRGB(255,0,0)
-                    elseif desc:IsA("UIStroke") then
-                        desc.Color = Color3.fromRGB(255,0,0)
-                    end
-                end
-            end
-        end
-    end)
 end)
 
 wait(1)
@@ -2929,21 +2926,21 @@ task.defer(function()
 end)
 Tabs.Info:AddSection("Thông Tin")
 Tabs.Info:AddButton({
-    ["Title"] = "HDanh Community",
+    ["Title"] = "Vhuu Community",
     ["Description"] = "Discord",
     ["Callback"] = function()
         setclipboard(tostring("https://dsc.gg/nopermc"))
     end
 })
 Tabs.Info:AddButton({
-    ["Title"] = "HDanh Hub",
+    ["Title"] = "Vhuu Hub",
     ["Description"] = "Youtube",
     ["Callback"] = function()
         setclipboard(tostring("https://youtube.com/@nopermc"))
     end
 })
 Tabs.Info:AddButton({
-    ["Title"] = "HDanh Hub",
+    ["Title"] = "Vhuu Hub",
     ["Description"] = "Tiktok",
     ["Callback"] = function()
         setclipboard(tostring("www.tiktok.com/@uytins1vn._"))
@@ -12043,4 +12040,4 @@ Tabs.Misc:AddButton({
 })
 
 -- ===============================================================
-print('✅ HDanh Hub - Tất cả tính năng đã được load!')
+print('✅ Vhuu Hub - Tất cả tính năng đã được load!')
