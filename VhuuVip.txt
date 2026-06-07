@@ -1,0 +1,7 @@
+-- this script created at https://lambloxfruitscript.vercel.app/
+getgenv().ScriptTitle = "Vhuu Hub"
+getgenv().ScriptSubTitle = "by Vhuu [Free]"
+getgenv().ScriptImage = "https://i.ibb.co/rKnb1QtG/1000050032.jpg"
+getgenv().ScriptAuthorName = "Vhuu"
+getgenv().ScriptAuthorSubTitle = "Vhuu"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hoannhatz/Script/refs/heads/main/EZScript.lua"))()
