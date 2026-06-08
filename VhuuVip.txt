@@ -1,8 +1,8 @@
 local CoreGui = game:GetService("StarterGui")
 
 CoreGui:SetCore("SendNotification", {
-    Title = "Vhuu Hub",
-    Text = "Flo đi mấy thằng em",
+    Title = "Vhuu Script Vip",
+    Text = "Cho chúng mày 10 giây để flo bố",
     Icon = "rbxassetid://121471149924300",
     Duration = 6
 })
@@ -24,7 +24,7 @@ BlurFrame.Size = UDim2.new(1, 0, 1, 0)
 local TextLabel = Instance.new("TextLabel", ScreenGui)
 TextLabel.Size = UDim2.new(1, 0, 1, 0)
 TextLabel.BackgroundTransparency = 1
-TextLabel.Text = "Vhuu"
+TextLabel.Text = "Vhuu Hub"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextStrokeTransparency = 0.2
 TextLabel.TextStrokeColor3 = Color3.fromRGB(0, 170, 255)
@@ -49,11 +49,11 @@ fadeBg:Play()
 task.wait(3.5)
 ScreenGui:Destroy()
 local WindUI =
-loadstring(game:HttpGet("https://raw.githubusercontent.com/vhuudzailvmax/vhuu/main/VhuuVip.txt"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/teoscrvn/T-ng-h-p-/refs/heads/main/Script%20test%20(1).txt"))()
 
 --🔹 Tạo Window
 local Window = WindUI:CreateWindow({
-    Title = "Vhuu Hub",
+    Title = "Vhuu Hub [Free]",
     Size = UDim2.fromOffset(580, 340),
     Theme = "Dark",
     Transparent = true
